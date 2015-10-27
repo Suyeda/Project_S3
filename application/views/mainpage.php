@@ -29,7 +29,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-<<<<<<< HEAD
     <style>
         .img-circle {
             border-radius: 50%;
@@ -41,8 +40,6 @@
         }
     </style>
 
-=======
->>>>>>> 0ba4eeb775b9f11f2f15edeb5467c6709fd1e99c
 </head>
 
 <body id="page-top" class="index">
@@ -189,7 +186,6 @@
                 </div>
             </div>
             <div class="row">
-<<<<<<< HEAD
                 <div class="col-lg-12 text-center">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 </div>
@@ -241,13 +237,6 @@
                             </li>
                         </ul>
                     </div>
-=======
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
->>>>>>> 0ba4eeb775b9f11f2f15edeb5467c6709fd1e99c
                 </div>
             </div>
         </div>
@@ -258,11 +247,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-<<<<<<< HEAD
                     <h2>Contact Us</h2>
-=======
-                    <h2>Contact Me</h2>
->>>>>>> 0ba4eeb775b9f11f2f15edeb5467c6709fd1e99c
                     <hr class="fa fa-envelope-square fa-3x">
                 </div>
             </div>
@@ -352,7 +337,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; <a href="/welcome/battle">Y</a>our <a href="/welcome/dash">W</a>ebsite 201<a href="/welcome/success">5</a>
+                        <a href="/welcome/admin">C</a>opyright &copy; <a href="/welcome/battle">Y</a>our <a href="/welcome/dash">W</a>ebsite 201<a href="/welcome/success">5</a>
                     </div>
                 </div>
             </div>

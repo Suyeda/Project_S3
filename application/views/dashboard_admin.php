@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Project S3 - Dashboard</title>
+    <title>Project S3 - Admin Dashboard</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
@@ -103,7 +103,7 @@
                                     <th>Wins</th>
                                     <th>Games Played</th>
                                     <th>Status</th>
-                                    <!-- <th>Created On</th> -->
+                                    <th>Created On</th>
                                 </tr>               
                             </thead>
                             <tbody>
@@ -116,7 +116,7 @@
                                     <td>4</td>
                                     <td>7</td>
                                     <td>User</td>
-                                    <!-- <td>10/12/2015</td> -->
+                                    <td>10/12/2015</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -127,7 +127,7 @@
                                     <td>2</td>
                                     <td>15</td>
                                     <td>User</td>
-                                    <!-- <td>10/10/2015</td> -->
+                                    <td>10/10/2015</td>
                                 </tr>                                
                             </tbody>
                         </table>

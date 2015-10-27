@@ -13,7 +13,6 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('mainpage');
 		// redirect('/codingdojo/ninjas');
-
 	}
 
 	public function success()
@@ -29,6 +28,11 @@ class Welcome extends CI_Controller {
 	public function battle()
 	{
 		$this->load->view('battle');
+	}
+
+	public function admin()
+	{
+		$this->load->view('dashboard_admin');
 	}
 }
 
