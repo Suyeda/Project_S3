@@ -1,9 +1,8 @@
 <?php
-class Amazon extends CI_Model{
 
-	
+	class Amazon extends CI_Model {
 
-}
+		
 
-
+	}
 ?>

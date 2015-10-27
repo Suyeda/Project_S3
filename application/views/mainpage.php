@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <!--STEPHEN...CHANGE HEADER A HOVER COLOR TO BLUE DOJO COLOR NOT GREEN-->
+    <!--STEPHEN...CHANGE GREEN COLORS TO BLUE IN FORM PLACE HOLDER,HOVERING LINKS, AND all defaults-->
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -231,7 +233,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                <button type="submit" class="btn btn-success btn-lg" style="background-color:#009AC7;">Send</button>
                             </div>
                         </div>
                     </form>
