@@ -78,11 +78,7 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => 'root',
-<<<<<<< HEAD
-	'database' => 'project_s3_db',
-=======
-	'database' => 'demo_mvc',
->>>>>>> 0ba4eeb775b9f11f2f15edeb5467c6709fd1e99c
+	'database' => 'project_S3_db',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
