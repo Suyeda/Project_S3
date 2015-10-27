@@ -31,6 +31,17 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+        .img-circle {
+            border-radius: 50%;
+        }
+
+        .team-member img {
+            margin: 0 auto;
+            border: 7px solid #fff;
+        }
+    </style>
+
 </head>
 
 <body id="page-top" class="index">
@@ -177,11 +188,57 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                <div class="col-lg-12 text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="/assets/images/about/stephen.png" class="img-responsive img-circle" alt="">
+                        <h4>Stephen</h4>
+                        <p class="text-muted">aka Sticky</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="/assets/images/about/sean_suy.png" class="img-responsive img-circle" alt="">
+                        <h4>Sean</h4>
+                        <p class="text-muted">aka SuperSean</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="/assets/images/about/sean_tall.png" class="img-responsive img-circle" alt="">
+                        <h4>Sean</h4>
+                        <p class="text-muted">aka Talls</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,7 +249,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
+                    <h2>Contact Us</h2>
                     <hr class="fa fa-envelope-square fa-3x">
                 </div>
             </div>
@@ -282,7 +339,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 201<a href="/welcome/success">5</a>
+                        <a href="/welcome/admin">C</a>opyright &copy; <a href="/welcome/battle">Y</a>our <a href="/welcome/dash">W</a>ebsite 201<a href="/welcome/success">5</a>
                     </div>
                 </div>
             </div>
