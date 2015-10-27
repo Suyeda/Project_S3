@@ -20,6 +20,16 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('success');
 	}
+
+	public function dash()
+	{
+		$this->load->view('dashboard');
+	}
+
+	public function battle()
+	{
+		$this->load->view('battle');
+	}
 }
 
 ?>
