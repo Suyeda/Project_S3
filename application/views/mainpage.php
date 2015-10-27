@@ -352,7 +352,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your <a href="/welcome/dash">W</a>ebsite 201<a href="/welcome/success">5</a>
+                        Copyright &copy; <a href="/welcome/battle">Y</a>our <a href="/welcome/dash">W</a>ebsite 201<a href="/welcome/success">5</a>
                     </div>
                 </div>
             </div>
