@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Wanna Bet? - Dashboard</title>
+    <title>Wanna Bet? - Wager</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,12 @@
         section {
             margin-top: 20px;
         }
+
+        .axn {
+            margin: 0px 10px;
+        }
     </style>
+
 </head>
 
 <body id="page-top" class="index">
@@ -57,24 +62,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Project S3</a>
+                <a class="navbar-brand" href="/">Wanna Bet?</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="hidden">
-                        <a href="/"></a>
+                        <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#leaders">Leaderboard</a>
+                    <li class="active">
+                        <a href="#">Wagers</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#teams">Teams</a>
+                    <li>
+                        <a href="/bets/dash">User Dashboard</a>
                     </li>
-                    <li class="page-scroll">
+                    <!-- <li class="page-scroll">
                         <a href="#contact">Profile</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#">Logout</a>
                     </li>
@@ -91,86 +96,29 @@
             <div id="leaders">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>User Leaderboard</h2>
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Rank</th>
-                                    <th>ID</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Nickname</th>
-                                    <th>Wins</th>
-                                    <th>Games Played</th>
-                                    <th>Status</th>
-                                </tr>               
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>Pariece</td>
-                                    <td>McKinney</td>
-                                    <td>PMK</td>
-                                    <td>4</td>
-                                    <td>7</td>
-                                    <td>User</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>1</td>
-                                    <td>Jimmy</td>
-                                    <td>Jun</td>
-                                    <td>Jimbo</td>
-                                    <td>2</td>
-                                    <td>15</td>
-                                    <td>User</td>
-                                </tr>                                
-                            </tbody>
-                        </table>
+                        <h2>Wagers</h2>
+                        <p>Claim your winnings</p>
                     </div>
                 </div> <!-- end of row for leaderboards -->
-            </div>
-
-            <div id="teams">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h2>Team Leaderboard</h2>
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Rank</th>
-                                    <th>Team ID</th>
-                                    <th>Team Name</th>
-                                    <th>Wins</th>
-                                    <th>Games Played</th>
-                                    <th># of Members</th>
-                                    <th>Created On</th>
-                                </tr>                   
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>Dragons</td>
-                                    <td>8</td>
-                                    <td>14</td>
-                                    <td>4</td>
-                                    <td>10/10/2015</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>2</td>
-                                    <td>Monsters</td>
-                                    <td>3</td>
-                                    <td>2</td>
-                                    <td>2</td>
-                                    <td>10/10/2015</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div> <!-- end of row for team -->
+                    <form>
+                        <div class="radio disabled">
+                            <label><input type="radio" name="optradio">Money</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">Goods</label>
+                        </div>
+                        <div class="radio ">
+                            <label class="radio">
+                                  <input type="radio" name="user_choice" value="other">
+                                Other: <input type="text" name="other_text" placeholder="i.e. wash my car">
+                            </label>
+                            <label>
+                                <button type="submit" class="btn btn-default">place wager</button>
+                            </label>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>

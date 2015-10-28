@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -15,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Triple S</title>
+    <title>Wanna Bet?</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">

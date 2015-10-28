@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Project S3 - Admin Dashboard</title>
+    <title>Wanna Bet? - Admin Dashboard</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,12 @@
         section {
             margin-top: 20px;
         }
+
+        .axn {
+            margin: 0px 10px;
+        }
     </style>
+
 </head>
 
 <body id="page-top" class="index">
@@ -64,17 +69,17 @@
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="/"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#leaders">Leaderboard</a>
+                    <li class="page-scroll active">
+                        <a href="#">Admin Dashboard</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#teams">Teams</a>
+                    <li>
+                        <a href="/bets/dash">User Dashboard</a>
                     </li>
-                    <li class="page-scroll">
+                    <!-- <li class="page-scroll">
                         <a href="#contact">Profile</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#">Logout</a>
                     </li>
@@ -91,24 +96,34 @@
             <div id="leaders">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>User Leaderboard</h2>
+                        <h2>Users</h2>
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>Rank</th>
                                     <th>ID</th>
                                     <th>First Name</th>
                                     <th>Last Name</th>
                                     <th>Nickname</th>
                                     <th>Wins</th>
-                                    <th>Games Played</th>
+                                    <th>Games</th>
                                     <th>Status</th>
                                     <th>Created On</th>
+                                    <th>Actions</th>
                                 </tr>               
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
+                                    <td>Jimmy</td>
+                                    <td>Jun</td>
+                                    <td>Jimbo</td>
+                                    <td>2</td>
+                                    <td>15</td>
+                                    <td>Captain</td>
+                                    <td>10/10/2015</td>
+                                    <td><a href="#"><i class="fa fa-pencil axn"></i></a>  <a href="#"><i class="fa fa-trash" alt="delete"></i></a></td>
+                                </tr>
+                                <tr>
                                     <td>2</td>
                                     <td>Pariece</td>
                                     <td>McKinney</td>
@@ -117,18 +132,30 @@
                                     <td>7</td>
                                     <td>User</td>
                                     <td>10/12/2015</td>
+                                    <td><a href="#"><i class="fa fa-pencil axn"></i></a>  <a href="#"><i class="fa fa-trash" alt="delete"></i></a></td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>1</td>
-                                    <td>Jimmy</td>
-                                    <td>Jun</td>
-                                    <td>Jimbo</td>
-                                    <td>2</td>
-                                    <td>15</td>
+                                    <td>3</td>
+                                    <td>Chris</td>
+                                    <td>Burns</td>
+                                    <td>Big Yoda</td>
+                                    <td>3</td>
+                                    <td>10</td>
                                     <td>User</td>
-                                    <td>10/10/2015</td>
-                                </tr>                                
+                                    <td>10/18/2015</td>
+                                    <td><a href="#"><i class="fa fa-pencil axn"></i></a>  <a href="#"><i class="fa fa-trash" alt="delete"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Sean</td>
+                                    <td>Suyeda</td>
+                                    <td>Sonic</td>
+                                    <td>21</td>
+                                    <td>21</td>
+                                    <td>Admin</td>
+                                    <td>10/01/2015</td>
+                                    <td><a href="#"><i class="fa fa-pencil axn"></i></a>  <a href="#"><i class="fa fa-trash" alt="delete"></i></a></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -138,37 +165,55 @@
             <div id="teams">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>Team Leaderboard</h2>
+                        <h2>Teams</h2>
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>Rank</th>
                                     <th>Team ID</th>
                                     <th>Team Name</th>
                                     <th>Wins</th>
-                                    <th>Games Played</th>
+                                    <th>Games</th>
                                     <th># of Members</th>
                                     <th>Created On</th>
+                                    <th>Actions</th>
                                 </tr>                   
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1</td>
                                     <td>1</td>
                                     <td>Dragons</td>
                                     <td>8</td>
                                     <td>14</td>
                                     <td>4</td>
                                     <td>10/10/2015</td>
+                                    <td><a href="#"><i class="fa fa-pencil axn"></i></a>  <a href="#"><i class="fa fa-trash" alt="delete"></i></a></td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
                                     <td>2</td>
                                     <td>Monsters</td>
                                     <td>3</td>
                                     <td>2</td>
                                     <td>2</td>
                                     <td>10/10/2015</td>
+                                    <td><a href="#"><i class="fa fa-pencil axn"></i></a>  <a href="#"><i class="fa fa-trash" alt="delete"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sharks</td>
+                                    <td>14</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>10/10/2015</td>
+                                    <td><a href="#"><i class="fa fa-pencil axn"></i></a>  <a href="#"><i class="fa fa-trash" alt="delete"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Freaks</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>10/27/2015</td>
+                                    <td><a href="#"><i class="fa fa-pencil axn"></i></a>  <a href="#"><i class="fa fa-trash" alt="delete"></i></a></td>
                                 </tr>
                             </tbody>
                         </table>

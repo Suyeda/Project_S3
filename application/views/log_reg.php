@@ -10,10 +10,10 @@
 		</head>
 		<body>
 			<header>
-				<a href="#page-top">Project S3</a>
+				<a href="/">Wanna Bet?</a>
 				<div class="navs">
-					 <a href="/welcome/go_mainpage">Home</a>
-					 <a href="/welcome/go_success">Success</a>
+					 <a href="/bets/go_mainpage">Home</a>
+					 <a href="/bets/go_success">Success</a>
 				</div>
 			</header>
 			<div class="container">
@@ -34,7 +34,7 @@
 								<div class="panel-body">
 									<div class="row">
 										<div class="col-lg-12">
-											<form id="login-form" action="http://phpoll.com/login/process" method="post" role="form" style="display: block;">
+											<form id="login-form" action="/bets/dash" method="post" role="form" style="display: block;">
 												<div class="form-group">
 													<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
 												</div>
@@ -56,13 +56,13 @@
 													<div class="row">
 														<div class="col-lg-12">
 															<div class="text-center">
-																<a href="http://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+																<a href="/bets/dash" tabindex="5" class="forgot-password">Forgot Password?</a>
 															</div>
 														</div>
 													</div>
 												</div>
 											</form>
-											<form id="register-form" action="http://phpoll.com/register/process" method="post" role="form" style="display: none;">
+											<form id="register-form" action="#" method="post" role="form" style="display: none;">
 												<div class="form-group">
 													<input type="text" name="first_name" id="first-name" tabindex="1" class="form-control" placeholder="First Name" value="">
 												</div>

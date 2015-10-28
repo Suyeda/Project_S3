@@ -230,14 +230,14 @@ section.success a.active {
     width: 87%;
     height: 100%;
     opacity: 0;
-    background: #009AC7;
+    background: white;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
+    opacity: 0.50;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
