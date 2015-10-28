@@ -32,7 +32,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		{
 			$this->load->view('dashboard');
 		}
-
 		public function battle()
 		{
 			$this->load->view('battle');
@@ -48,5 +47,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$this->load->view('wager');
 		}
 	}
+		public function quotes(){
+			$this->load->model("bet");
+			$data = $this->bet->grab_random_quote();
+			echo json_encode($data);	
+		}
+}
+
 
 ?>
