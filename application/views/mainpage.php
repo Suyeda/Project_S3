@@ -339,7 +339,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="/welcome/admin">C</a>opyright &copy; <a href="/welcome/battle">Y</a>our <a href="/welcome/dash">W</a>ebsite 201<a href="/welcome/success">5</a>
+                        <a href="/bets/admin">C</a>opyright &copy; <a href="/bets/battle">Y</a>our <a href="/bets/dash">W</a>ebsite 201<a href="/bets/success">5</a>
                     </div>
                 </div>
             </div>

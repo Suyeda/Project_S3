@@ -12,8 +12,8 @@
 			<header>
 				<a href="#page-top">Project S3</a>
 				<div class="navs">
-					 <a href="/welcome/go_mainpage">Home</a>
-					 <a href="/welcome/go_success">Success</a>
+					 <a href="/bets/go_mainpage">Home</a>
+					 <a href="/bets/go_success">Success</a>
 				</div>
 			</header>
 			<div class="container">
