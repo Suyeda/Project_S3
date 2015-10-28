@@ -5,7 +5,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		public function __construct() {
 			parent::__construct();
-			// $this->output->enable_profiler(TRUE);
 			//$this->load->MODEL
 		}
 
