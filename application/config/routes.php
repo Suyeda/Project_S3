@@ -51,6 +51,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'welcome';
 $route['success'] = 'welcome/success';
+$route['log_reg'] = 'welcome/log_reg';
+$route['results'] = 'welcome/results';
+$route['teams'] = 'welcome/teams';
 $route['dash'] = 'welcome/dash';
 $route['battle'] = 'welcome/battle';
 $route['admin'] = 'welcome/admin';
