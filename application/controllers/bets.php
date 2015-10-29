@@ -30,8 +30,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		public function dash()
 		{
-			$this->load->model('bet');
-			$this->bet->find_other_users()
+			// $this->load->model('bet');
+			// $this->bet->find_other_users();
 			$this->load->view('dashboard');
 		}
 
