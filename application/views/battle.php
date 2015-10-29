@@ -1,31 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>Wanna Bet?</title>
-
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="/assets/stylesheets/freelancer.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-   
-  
-
-
     <script>
       $(document).ready(function(){
 
@@ -47,45 +37,41 @@
 
       });
     </script>
-
-        <style>
-    img{
-      width:10%;
-      height:10%;
-      margin-top: -10.5%;
-    }
-    form{
-      width : 45%;
-    }
-    .go_mid{
-      text-align: center;
-    }
-    .container{
-      margin-bottom: 2.5%;
-    }
-    .team{
-      width: 33.5%;
-      margin: 0 5%;
-      display: inline-block;
-    }
-    .center_table{
-      width: 35%;
-      margin: 0 auto;
-      float: none !important;
-    }
-    .small{
-      font-size: 15px;
-    }
-    .smaller{
-      font-size: 11px;
-    }
-
+    <style>
+      img{
+        width: 10%;
+        height: 10%;
+        margin-top: -10.5%;
+      }
+      form{
+        width: 45%;
+      }
+      .go_mid{
+        text-align: center;
+      }
+      .container{
+        margin-bottom: 2.5%;
+      }
+      .team{
+        width: 33.5%;
+        margin: 0 5%;
+        display: inline-block;
+      }
+      .center_table{
+        width: 35%;
+        margin: 0 auto;
+        float: none !important;
+      }
+      .small{
+        font-size: 15px;
+      }
+      .smaller{
+        font-size: 11px;
+      }
     </style>
 </head>
-
-
 <body>
-  <div class="container">
+  <digit v class="container">
     <h2>Battle Arena</h2>
     <p>Two groups enter, only one leaves. This is the ultimate bloodsport, ladies and gentleman. Teams from all walks of life--bred for the rigors of war but seeking riches and recognition--end up here.</p>            
     <table class="table team">

@@ -72,11 +72,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 redirect("/bets/log_reg");
             }
         }
-
         public function register() {
 
             $this->load->model('bet');
             $this->bet->register_user($this->input->post());
         }
-	}
+
+        public function logout() {
+
+        	$this->session->sess_destroy();
+        	redirect('/bets');
+        }
+
+}
+
 ?>
