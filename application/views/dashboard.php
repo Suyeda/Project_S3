@@ -151,7 +151,7 @@
                 </div> <!-- end of row for leaderboards -->
             </div>
 
-            <div id="teams">
+            <div id="teamscores">
                 <div class="row">
                     <div class="col-lg-12 sects">
                         <h2>Team Leaderboard</h2>
@@ -178,10 +178,62 @@
                             </tbody>
                         </table>
                     </div>
-                </div> <!-- end of row for team -->
+                </div> <!-- end of row for team leaderboard -->
+            </div>
+
+            <div id="teams">
+                <div class="row">
+                    <div class="col-lg-12 sects">
+                        <h2>Teams</h2>
+                        <br>
+                        <div class="row teams">
+                            <div class="col-sm-4 portfolio-item">
+                                <a href="/bets/edit_team" class="portfolio-link">
+                                    <h4>Legendary Leviathans</h4>
+                                    <img src="/assets/images/portfolio/team1.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 portfolio-item">
+                                <a href="/bets/team_profile/2" class="portfolio-link">
+                                    <h4>Boundless Ambition</h4>
+                                    <img src="/assets/images/portfolio/team2.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 portfolio-item">
+                                <a href="/bets/team_profile/3" class="portfolio-link">
+                                    <h4>Hand of God</h4>
+                                    <img src="/assets/images/portfolio/team3.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row teams">
+                            <div class="col-sm-4 portfolio-item">
+                                <a href="/bets/team_profile/4" class="portfolio-link">
+                                    <h4>Journey's End</h4>
+                                    <img src="/assets/images/portfolio/team4.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 portfolio-item">
+                                <a href="/bets/team_profile/5" class="portfolio-link">
+                                    <h4>Betrayers of Humanity</h4>
+                                    <img src="/assets/images/portfolio/team5.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-4 portfolio-item">
+                                <a href="/bets/team_profile/6" class="portfolio-link">
+                                    <h4>Sinister's Revenge</h4>
+                                    <img src="/assets/images/portfolio/team6.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of row for teams -->
             </div>
         </div>
     </section>
+
+
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visible-sm">
