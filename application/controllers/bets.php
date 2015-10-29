@@ -50,6 +50,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		{
 			$this->load->view('wager');
 		}
+		public function teams(){
+			$this->load->view('teams');
+		}
 
 
 		public function quotes()

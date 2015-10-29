@@ -40,6 +40,9 @@
             margin: 0 auto;
             border: 7px solid #fff;
         }
+        .about_info{
+            margin: 1%;
+        }
     </style>
 
 </head>
@@ -115,7 +118,7 @@
             </div>
             <div class="row teams">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="/bets/teams/1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -125,7 +128,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="/bets/teams/2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -188,8 +191,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                <div class="col-lg-12 text-center about_info">
+                    We are a great team of entrepreneurs who have the vision and capability to build anything. Each of our member's coding talent is top-notch and how we approach the app industry is going to pave a new the way of how competition is viewed.  Not to mention we are all Coding Dojo alumni constantly striving to pursue our passion of web development and help the world become a better place. 
                 </div>
             </div>
             <div class="row">
