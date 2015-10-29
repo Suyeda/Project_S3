@@ -75,7 +75,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         public function register() {
 
             $this->load->model('bet');
-            $this->bet->register_user($this->input->post());
+            $user = $this->bet->register_user($this->input->post());
+            if($user == true) {
+            	redirect('/bets/dash');
+            } else {
+            	$errors = validation_errors();
+				$this->load->view('log_reg', $errors);
+            }
         }
 
         public function logout() {
