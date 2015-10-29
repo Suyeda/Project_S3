@@ -2,6 +2,7 @@
 					margin: 0;
 					padding: 0;
 					font-family: arial;
+					color: black;
 				}
 				body {
 					background-color: #1F7ABC;
@@ -26,6 +27,13 @@
 				}
 				label {
 					display: inline;
+				}
+				table {
+					background-color: red;
+					width: 100%;
+					color: black;
+					font-weight: bold;
+					margin: 0 auto;
 				}
 				.navs {
 					margin-left: 70%;
@@ -119,6 +127,7 @@
 				}
 				.forgot-password:hover,
 				.forgot-password:focus {
+
 					text-decoration: underline;
 					color: #666;
 				}
@@ -139,4 +148,55 @@
 					color: #fff;
 				    background-color: #022B3A;
 				    border-color: #022B3A;
+				}
+				.panel {
+					margin: 2% 12.5% 0 12.5%;
+					padding: 2%;
+					background-color: white;
+				}
+				.panel h1 {
+					margin-bottom: 5%;
+					text-align: center;
+					font-size: 4em;
+				}
+				#teampic {
+					margin: 0 auto 5% auto;
+					border-radius: 50%;
+				}
+				#recentgames {
+					border: solid black 2px;
+					height: 200px;
+					background-color: white;
+				}
+				#roster {
+					border: solid black 2px;
+					height: 200px;
+					background-color: white;
+				}
+				#stats {
+					border: solid black 2px;
+					background-color: white;
+					height: 200px;
+				}
+				#challenge-button {
+					text-align: center;
+					margin: 2% 0 0 40.5%;
+					color: black;
+					font-weight: bold;
+					padding: 1%;
+					width: 20%;
+					border-radius: 60px;
+					background-color: #B10F2E;
+					border: none;
+				}
+				#statstable td {
+					border-bottom: solid black 2px;
+					text-align: center;
+					background-color: #8E9AAF;
+				}
+				#register-form p {
+					color: red;
+				}
+				.error {
+					color: red;
 				}
