@@ -115,12 +115,10 @@
                         </tbody>
                     </table>
                 </div>
-                
                 <h2>Roster</h2>
                 <div id="roster" class="col-lg-12">
                     <table class="customtable table table-hover">
                         <thead>
-                            <?php foreach($current_roster as $current_player) ?>
                             <tr>
                                 <td>First Name</td>
                                 <td>Last Name</td>
@@ -129,7 +127,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach($current_roster as $current_player) ?>
+                            <?php foreach($current_roster as $current_player){ ?>
                             <tr>
                                 <td><?= $current_player['first_name']?></td>
                                 <td><?= $current_player['last_name']?></td>
@@ -140,6 +138,7 @@
                                 <?php } ?>
                                 <td><?= $current_player['gp']?></td>
                             </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
