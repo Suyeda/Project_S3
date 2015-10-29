@@ -60,3 +60,4 @@ $route['battle'] = 'bets/battle';
 $route['admin'] = 'bets/admin';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['landr'] = "/welcome/register/#register-form-link";
