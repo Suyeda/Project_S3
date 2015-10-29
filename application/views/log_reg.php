@@ -53,6 +53,12 @@
             padding: 10px;
             margin: 20px 0;
         }
+
+        .notes {
+            font-size: 12px;
+            margin-left: 20px;
+        }
+
     </style>
 
 
@@ -167,6 +173,19 @@
                                                 <div class="form-group">
                                                     <input type="password" name="pass2" id="pass2" tabindex="2" class="form-control" placeholder="Password Conformation">
                                                 </div>
+                                                <div class="form-group">
+                                                    <label>Select your alliance:</label>
+                                                    <select class="form-control" name="select_team" required>
+                                                        <option value=""></option>
+                                                        <option value="1">Legendary Leviathans</option>
+                                                        <option value="2">Boundless Ambition</option>
+                                                        <option value="3">Hand of God</option>
+                                                        <option value="4">Journey's End</option>
+                                                        <option value="5">Betrayers of Humanity</option>
+                                                        <option value="6">Sinister's Revenge</option>
+                                                    </select>
+                                                </div>
+                                                <p class="notes"><em>* All fields required for registration.</em></p>
                                                 <div class="form-group">
                                                     <div class="row">
                                                         <div class="col-sm-6 col-sm-offset-3">
