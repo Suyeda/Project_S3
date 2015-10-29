@@ -71,7 +71,7 @@
     </style>
 </head>
 <body>
-  <div class="container">
+  <digit v class="container">
     <h2>Battle Arena</h2>
     <p>Two groups enter, only one leaves. This is the ultimate bloodsport, ladies and gentleman. Teams from all walks of life--bred for the rigors of war but seeking riches and recognition--end up here.</p>            
     <table class="table team">

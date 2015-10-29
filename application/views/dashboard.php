@@ -79,9 +79,6 @@
                     <li class="page-scroll">
                         <a href="#teams">Teams</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Profile</a>
-                    </li>
                     <li>
                         <a href="/bets/logout">Logout</a>
                     </li>
@@ -102,19 +99,19 @@
                     <table>
                         <tr>
                             <td>Nickname: </td>
-                            <td> Mo' Sucka!!!</td>
+                            <td><?= $this->session->userdata['nickname'] ?></td>
                         </tr>
                         <tr>
                             <td>Email: </td>
-                            <td> <a href="mailto:email@address.com">email@address.com</a></td>
+                            <td> <a href="mailto:email@address.com"></a><?= $this->session->userdata['user_email'] ?></td>
                         </tr>
                         <tr>
                             <td>Wins: </td>
-                            <td> 70</td>
+                            <td><?= $this->session->userdata['wins'] ?></td>
                         </tr>
                         <tr>
                             <td>Games Played: </td>
-                            <td> 70</td>
+                            <td><?= $this->session->userdata['gamesplayed'] ?></td>
                         </tr>
 
                     </table>
@@ -128,7 +125,6 @@
                             <thead>
                                 <tr>
                                     <th>Rank</th>
-                                    <th>ID</th>
                                     <th>First Name</th>
                                     <th>Last Name</th>
                                     <th>Nickname</th>
@@ -138,26 +134,17 @@
                                 </tr>               
                             </thead>
                             <tbody>
+                                <?php foreach($all_users as $user) {    ?>
                                 <tr>
                                     <td>1</td>
-                                    <td>2</td>
-                                    <td>Pariece</td>
-                                    <td>McKinney</td>
-                                    <td>PMK</td>
-                                    <td>4</td>
-                                    <td>7</td>
-                                    <td>User</td>
+                                    <td><?= $user['first_name'] ?></td>
+                                    <td><?= $user['last_name'] ?></td>
+                                    <td><?= $user['nickname'] ?></td>
+                                    <td><?= $user['wins'] ?></td>
+                                    <td><?= $user['gp'] ?></td>
+                                    <td><?= $user['status'] ?></td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>1</td>
-                                    <td>Jimmy</td>
-                                    <td>Jun</td>
-                                    <td>Jimbo</td>
-                                    <td>2</td>
-                                    <td>15</td>
-                                    <td>User</td>
-                                </tr>                                
+                                <?php } ?>                             
                             </tbody>
                         </table>
                     </div>
@@ -172,33 +159,22 @@
                             <thead>
                                 <tr>
                                     <th>Rank</th>
-                                    <th>Team ID</th>
                                     <th>Team Name</th>
                                     <th>Wins</th>
                                     <th>Games Played</th>
                                     <th># of Members</th>
-                                    <th>Created On</th>
                                 </tr>                   
                             </thead>
-                            <tbody>
+                            <tbody> 
+                                <?php foreach ($all_teams as $team) { ?>                               
                                 <tr>
                                     <td>1</td>
-                                    <td>1</td>
-                                    <td>Dragons</td>
-                                    <td>8</td>
-                                    <td>14</td>
+                                    <td><?= $team['name'] ?></td>
+                                    <td><?= $team['team_wins'] ?></td>
+                                    <td><?= $team['team_gp'] ?></td>
                                     <td>4</td>
-                                    <td>10/10/2015</td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>2</td>
-                                    <td>Monsters</td>
-                                    <td>3</td>
-                                    <td>2</td>
-                                    <td>2</td>
-                                    <td>10/10/2015</td>
-                                </tr>
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>
