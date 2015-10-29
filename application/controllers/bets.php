@@ -84,6 +84,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         	redirect('/bets');
         }
 
-}
+        public function team_profile()
+        {
+			$this->load->view('teams');
+        }
 
+        // Temporary controllers to connect to team edit page
+        public function edit_team()
+        {
+			$this->load->view('edit_team');
+        }
+
+        // Temporary controllers to link to the profile edit page
+        public function edit_user()
+        {
+        	$this->load->view('edit_user');
+        }
+	}
 ?>
