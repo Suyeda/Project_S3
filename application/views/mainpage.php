@@ -121,7 +121,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/team1.jpg" class="img-responsive" alt="">
+                        <img src="/assets/images/portfolio/team1.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -131,7 +131,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/team2.jpg" class="img-responsive" alt="">
+                        <img src="/assets/images/portfolio/team2.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -141,7 +141,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/team3.jpg" class="img-responsive" alt="">
+                        <img src="/assets/images/portfolio/team3.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -151,7 +151,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/team4.jpg" class="img-responsive" alt="">
+                        <img src="/assets/images/portfolio/team4.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -161,7 +161,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/team5.jpg" class="img-responsive" alt="">
+                        <img src="/assets/images/portfolio/team5.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -171,7 +171,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/team6.jpg" class="img-responsive" alt="">
+                        <img src="/assets/images/portfolio/team6.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
