@@ -3,10 +3,10 @@
 	<html>
 		<head>
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-			<link rel="stylesheet" href="/assets/stylesheets/landr.css">
+			<link rel="stylesheet" href="/assets/stylesheets/log_reg.css">
 			<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-			<script src="/assets/javascripts/landr.js"></script>
+			<script src="/assets/javascripts/log_reg.js"></script>
 		</head>
 		<body>
 			<header>
