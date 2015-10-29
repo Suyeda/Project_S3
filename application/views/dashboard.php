@@ -83,7 +83,7 @@
                         <a href="#contact">Profile</a>
                     </li>
                     <li>
-                        <a href="#">Logout</a>
+                        <a href="/bets/logout">Logout</a>
                     </li>
                 </ul>
             </div>
