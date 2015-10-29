@@ -168,7 +168,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel"><div id="quote">hi</div></h4>
+          <h4 class="modal-title" id="myModalLabel"><div id="quote"></div></h4>
         </div>
         <div class="modal-body">
           <div class="container">
@@ -195,7 +195,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Submit Results</button>
+          <button type="submit" class="btn btn-primary">Submit Results</button>
         </div>
       </div>
     </div>
