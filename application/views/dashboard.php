@@ -188,7 +188,7 @@
                         <br>
                         <div class="row teams">
                             <div class="col-sm-4 portfolio-item">
-                                <a href="/bets/edit_team" class="portfolio-link">
+                                <a href="/bets/team_profile/1" class="portfolio-link">
                                     <h4>Legendary Leviathans</h4>
                                     <img src="/assets/images/portfolio/team1.jpg" class="img-responsive" alt="">
                                 </a>

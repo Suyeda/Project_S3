@@ -68,5 +68,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$query = "SELECT * FROM teams";
 			return $this->db->query($query)->result_array();
 		}
+		public function grab_team_info($team_id){
+			$query = "SELECT * FROM teams WHERE id = ?";
+			$values = ($team_id);
+			return $this->db->query($query, $values)->row_array();
+		}
+		public function grab_team_roster($team_id){
+			$query = "SELECT * FROM teams LEFT JOIN users on users.teams_id = teams.id WHERE teams_id = ?";
+			$values = ($team_id);
+			return $this->db->query($query, $values)->result_array();
+		}
 	}
+
+
+
+
+
 ?>

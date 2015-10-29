@@ -84,9 +84,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         	redirect('/bets');
         }
 
-        public function team_profile()
+        public function team_profile($team_id)
         {
-			$this->load->view('teams');
+        	$this->load->model('bet');
+        	$current_team_info = $this->bet->grab_team_info($team_id);
+        	$current_team_roster = $this->bet->grab_team_roster($team_id);
+			$this->load->view('teams', array('current_team' => $current_team_info,
+				'current_roster' => $current_team_roster));
         }
 
         // Temporary controllers to connect to team edit page
