@@ -30,9 +30,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		public function dash()
 		{
-			// $this->load->model('bet');
-			// $this->bet->find_other_users();
-			$this->load->view('dashboard');
+			$this->load->model('bet');
+			$all_users = $this->bet->find_all_users();
+			$all_teams = $this->bet->find_all_teams();
+			$this->load->view('dashboard', array('all_users' => $all_users, 'all_teams' => $all_teams));
 		}
 
 		public function battle()
@@ -59,20 +60,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 
 		public function sign_in() {
-
-            $email = $this->input->post('email');
-            $password = $this->input->post('password');
             $this->load->model('bet');
-            $competitor = $this->bet->get_user_by_email($email);
-            if($competitor && $competitor['password'] == $password) {
-
-                $user = array(
-                   'competitor_id' => $competitor['id'],
-                   'competitor_email' => $competitor['email'],
-                   'competitor_name' => $competitor['first_name'].' '.$competitor['last_name'],
-                   'is_logged_in' => true
-                );
-                $this->session->set_userdata($user);
+            $check = $this->bet->get_user_by_email($this->input->post());
+            if($check == true){
                 redirect("/bets/dash");
             } else {
                 $this->session->set_flashdata("login_error", "<p style='color:red'>Invalid email or password!</p>");
@@ -85,8 +75,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $this->load->model('bet');
             $this->bet->register_user($this->input->post());
         }
-
-}
-
-
+	}
 ?>

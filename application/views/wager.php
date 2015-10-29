@@ -45,6 +45,12 @@
         .axn {
             margin: 0px 10px;
         }
+
+        .notes {
+            font-size: 12px;
+            margin-left: 20px;
+        }
+
     </style>
 
 </head>
@@ -102,17 +108,24 @@
                 </div> <!-- end of row for leaderboards -->
                 <div class="row">
                     <form>
-                        <div class="radio disabled">
-                            <label><input type="radio" name="optradio">Money</label>
+                        <div class="radio">
+                            <label>
+                                <!-- <input type="radio" name="optradio"> --> Money
+                                <input type="text" name="goods" placeholder="$0.00">
+                            </label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" name="optradio">Goods</label>
-                        </div>
-                        <div class="radio ">
-                            <label class="radio">
-                                  <input type="radio" name="user_choice" value="other">
-                                Other: <input type="text" name="other_text" placeholder="i.e. wash my car">
+                            <label>
+                                <!-- <input type="radio" name="optradio"> --> Goods: 
+                                <input type="text" name="goods" placeholder="Chipotle">
                             </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <!-- <input type="radio" name="optradio" value="other"> --> Other: 
+                                <input type="text" name="other_text" placeholder="i.e. wash my car">
+                            </label>
+                            <p class="notes"><em>* If you want to play for free, please leave blank</em></p>
                             <label>
                                 <button type="submit" class="btn btn-default">place wager</button>
                             </label>

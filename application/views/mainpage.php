@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Wanna Bet? - Triple S</title>
+    <title>Project S3</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Wanna Bet?</a>
+                <a class="navbar-brand" href="#page-top">Project S3</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
