@@ -41,6 +41,13 @@
         section {
             margin-top: 20px;
         }
+
+        .sects {
+            border: 2px dotted silver;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px 0;
+        }
     </style>
 </head>
 
@@ -88,9 +95,34 @@
 
     <section>
         <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 sects">
+                    <h2>Your Profile</h2>    
+                    <table>
+                        <tr>
+                            <td>Nickname: </td>
+                            <td> Mo' Sucka!!!</td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td> <a href="mailto:email@address.com">email@address.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Wins: </td>
+                            <td> 70</td>
+                        </tr>
+                        <tr>
+                            <td>Games Played: </td>
+                            <td> 70</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
             <div id="leaders">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 sects">
                         <h2>User Leaderboard</h2>
                         <table class="table table-hover">
                             <thead>
@@ -134,7 +166,7 @@
 
             <div id="teams">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 sects">
                         <h2>Team Leaderboard</h2>
                         <table class="table table-hover">
                             <thead>

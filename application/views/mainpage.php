@@ -79,7 +79,7 @@
                         <a href="/bets/log_reg">Sign In</a>
                     </li>
                     <li>
-                        <a href="#">Register</a>
+                        <a href="/bets/reg">Register</a>
                     </li>
                 </ul>
             </div>
