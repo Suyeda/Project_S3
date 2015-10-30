@@ -35,13 +35,16 @@
         .img-circle {
             border-radius: 50%;
         }
-
         .team-member img {
             margin: 0 auto;
             border: 7px solid #fff;
         }
         .about_info{
             margin: 1%;
+        }
+
+        .logo_thing {
+            color: white;
         }
     </style>
 
@@ -60,7 +63,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Project S3</a>
+                <a class="navbar-brand logo_thing" href="#page-top">Project S3</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -195,7 +198,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="/assets/images/about/stephen.png" class="img-responsive img-circle" alt="">
+                        <img src="/assets/images/about/stephen3.jpg" class="img-responsive img-circle" alt="">
                         <h4>Stephen</h4>
                         <p class="text-muted">aka Sticky</p>
                         <ul class="list-inline social-buttons">
@@ -211,7 +214,7 @@
 
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="/assets/images/about/sean_suy.png" class="img-responsive img-circle" alt="">
+                        <img src="/assets/images/about/suyeda3.jpg" class="img-responsive img-circle" alt="">
                         <h4>Sean</h4>
                         <p class="text-muted">aka SuperSean</p>
                         <ul class="list-inline social-buttons">
@@ -227,7 +230,7 @@
 
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="/assets/images/about/sean_tall.png" class="img-responsive img-circle" alt="">
+                        <img src="/assets/images/about/sean_tall2.jpg" class="img-responsive img-circle" alt="">
                         <h4>Sean</h4>
                         <p class="text-muted">aka Talls</p>
                         <ul class="list-inline social-buttons">
@@ -305,11 +308,11 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Locatio<a href="/bets/wager">n</a></h3>
-                        <p>1980 Zanker Rd #30<br>San Jose, CA 95112<br><a href="/bets/results">(408)519-3392</a></p>
+                        <h3>Location</h3>
+                        <p>1980 Zanker Rd #30<br>San Jose, CA 95112<br>(408)519-3392</a></p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Around the We<a href="/bets/cart">b</a></h3>
+                        <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
@@ -329,8 +332,8 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3><a href="/bets/teams">A</a>bout Wanna Bet</h3>
-                        <p>Wanna bet, was created when ping pong gents wanted to hold wagers but had no place to keep <a href="http://startbootstrap.com">track</a>.</p>
+                        <h3>About Wanna Bet</h3>
+                        <p>Wanna bet, was created when ping pong gents wanted to hold wagers but had no place to keep track.</p>
                     </div>
                 </div>
             </div>
@@ -339,7 +342,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="/bets/admin">C</a>opyright &copy; <a href="/bets/battle">Y</a>our <a href="/bets/dash">W</a>ebsite 201<a href="/bets/success">5</a>
+                        Copyright &copy; Project S3 2015</a>
                     </div>
                 </div>
             </div>

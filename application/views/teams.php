@@ -90,7 +90,7 @@
                             <a href="#teams">Teams</a>
                         </li>
                         <li>
-                            <a href="#">Logout</a>
+                            <a href="/bets/logout">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -108,13 +108,6 @@
                 <div class = "center_me col-lg-12">
                 <img id="teampic" src="/assets/images/portfolio/team<?=$current_team['id']?>.jpg" class="img-responsive" alt="">
             	</div>
-                <h2>Recent Games</h2>
-                <div id="recentgames">
-                    <table class="customtable table table-hover">
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
                 <h2>Roster</h2>
                 <div id="roster" class="col-lg-12">
                     <table class="customtable table table-hover">
@@ -122,8 +115,6 @@
                             <tr>
                                 <td>First Name</td>
                                 <td>Last Name</td>
-                                <td>W/L Ratio</td>
-                                <td>Games Played</td>
                             </tr>
                         </thead>
                         <tbody>
@@ -131,36 +122,40 @@
                             <tr>
                                 <td><?= $current_player['first_name']?></td>
                                 <td><?= $current_player['last_name']?></td>
-                                <?php if($current_player['gp'] != 0){ ?>
-                                <td><?= $current_player['wins'] / $current_player['gp'] ?></td>
-                                <?php }else{ ?>
-                                <td>0%</td>
-                                <?php } ?>
-                                <td><?= $current_player['gp']?></td>
                             </tr>
                             <?php } ?>
                         </tbody>
                     </table>
                 </div>
+
+
                 <h2>Stats</h2>
                 <div id="stats">
                     <table class="customtable table table-hover">
                         <thead>
                             <tr>
-                                <td>Wins</td>
-                                <td>Loses</td>
-                                <td>W/L Ratio</td>
-                                <td>Games Played</td>
+                                <th>Wins</th>
+                                <th>Loses</th>
+                                <th>W/L Ratio</th>
+                                <th>Games Played</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td><?= $current_team['team_wins'] ?></td>
+                                <td><?= $current_team['team_gp'] - $current_team['team_wins'] ?></td>
+                                <td><?= $current_team['team_wins'] / $current_team['team_gp'] ?>%</td>
+                                <td><?= $current_team['team_gp'] ?></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
+
+
                 
                 <?php if($this->session->userdata('team_id') !== $current_team['id']) { ?>
                 <a href="/bets/duel/<?=$current_team['id']?>" class="btn btn-primary" id="challenge-button">Challenge Team</a>
-                <?php } ?>
+                <?php  } ?>
             </div>
                 </div>
             </div>

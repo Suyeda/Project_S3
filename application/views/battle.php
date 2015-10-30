@@ -171,6 +171,7 @@
 
                     <div class="col-lg-5">
                       <table class="table team">
+
                         <thead>
                           <tr>
                             <th>Team: <?= $enemy_team[0]['name'] ?> | W/GP: 19/30</th>

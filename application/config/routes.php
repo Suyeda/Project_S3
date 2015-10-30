@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'bets';
 $route['/bets/edit/(:any)'] = 'bets/edit/$1';
-$route['/bets/duel/(:any)'] = 'bets/duel/$1';
+$route['/bets/duel/(:any)/(:any)'] = 'bets/duel/$1/$2';
 $route['/bets/hold_bet/(:any)'] = 'bets/hold_bet/$1';
 $route['/bets/battle/(:any)'] = 'bets/battle/$1';
 $route['/bets/team_profile/(:any)'] = 'bets/team_profile/$1';

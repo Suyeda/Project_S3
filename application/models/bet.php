@@ -67,9 +67,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		public function find_all_teams()
 		{
-			$query = "SELECT * FROM teams ORDER BY teams.rank ASC";
+			$query = "SELECT * FROM teams ORDER BY teams.team_wins/teams.team_gp DESC";
 			return $this->db->query($query)->result_array();
-		}		
+		}	
+
+
+		public function find_all_real_teams(){
+			$query = "SELECT * from teams";
+			return $this->db->query($query)->result_array();
+		}
+
 		public function grab_team_info($team_id){
 			$query = "SELECT * FROM teams WHERE id = ?";
 			$values = ($team_id);
@@ -94,7 +101,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		{
 			$query = "SELECT teams.id, users.nickname, teams.name FROM teams LEFT JOIN users ON teams.id = users.teams_id WHERE teams.id = ?";
 			$values = ($enemy_id);
-			return $this->db->query($query, $enemy_id)->result_array();
+			return $this->db->query($query, $values)->result_array();
 		}
 
 		public function find_my_team($my_team_id)
@@ -134,6 +141,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$this->db->query($query5, $values5);
 
 
+			$query6 = "UPDATE teams SET team_wins = ?, team_gp = ? WHERE id = ?";
+
+			$find_wins_query = "SELECT team_wins, team_gp from teams WHERE id = ?";
+			$find_wins_values = ($data['winner']);
+
+			$found_wins_gp = $this->db->query($find_wins_query, $find_wins_values)->row_array();
+
+			$values6 = array($found_wins_gp['team_wins'] + 1, $found_wins_gp['team_gp'] + 1, $data['winner'] );
+			$this->db->query($query6, $values6);
+			//After each game adds one to their gp and wins for winner id.
+
+			$query7 = "UPDATE teams SET team_gp = ? WHERE id =?";
+
+			$find_loss_query = "SELECT team_gp FROM teams where id = ?";
+			$find_loss_values = ($data['loser']);
+
+			$found_loss_gp = $this->db->query($find_loss_query, $find_loss_values)->row_array();
+
+			$values7 = array($found_loss_gp['team_gp'] + 1, $data['loser']);
+			$this->db->query($query7, $values7);
 
 		}
 		public function num_of_members() {
@@ -148,10 +175,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				}
 				return $array;
 			}
+
+		public function recent_match_info()
+		{
+			$query = "SELECT match_history.winner, match_history.loser, wagers.cash, wagers.goods, wagers.other FROM matches LEFT JOIN wagers ON wagers.id = matches.wagers_id LEFT JOIN match_history ON matches.match_history_id = match_history.id ORDER BY matches.id DESC";
+
+			return $this->db->query($query)->result_array();
+		}
+
 	}
-
-
-
 
 
 ?>

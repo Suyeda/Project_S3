@@ -107,7 +107,7 @@
                     </div>
                 </div> <!-- end of row for leaderboards -->
                 <div class="row">
-                    <form action="/bets/hold_bet/<?= $data['enemy_id'] ?>" method="post">
+                    <form action="/bets/hold_bet/<?= $data ?>" method="post">
                         <div class="radio">
                             <label>
                                 <!-- <input type="radio" name="optradio"> --> Money

@@ -48,6 +48,11 @@
             padding: 10px;
             margin: 20px 0;
         }
+
+        .ko {
+            /*width: 40%;*/
+            margin: 0px;
+        }
     </style>
 </head>
 
@@ -120,29 +125,29 @@
             <div id="leaders">
                 <div class="row">
                     <div class="col-lg-12 sects">
-                        <h2>User Leaderboard</h2>
+                        <h2>Recent Matches</h2>
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>Rank</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Nickname</th>
-                                    <th>Wins</th>
-                                    <th>Games Played</th>
-                                    <th>Status</th>
+                                    <th>Winning Team</th>
+                                    <th>Defeated</th>
+                                    <th>Losing Team</th>
+                                    <th>Cash</th>
+                                    <th>Goods</th>
+                                    <th>Other</th>
                                 </tr>               
                             </thead>
                             <tbody>
-                                <?php foreach($all_users as $user) {    ?>
+
+                                <?php foreach($recent_results as $recent_result) {    ?>
                                 <tr>
-                                    <td>1</td>
-                                    <td><?= $user['first_name'] ?></td>
-                                    <td><?= $user['last_name'] ?></td>
-                                    <td><?= $user['nickname'] ?></td>
-                                    <td><?= $user['wins'] ?></td>
-                                    <td><?= $user['gp'] ?></td>
-                                    <td><?= $user['status'] ?></td>
+                                    <td><?= $real_all_teams[$recent_result['winner']]['name'] ?></td>
+                                    <td><img src="/assets/images/portfolio/ko_3.jpg" class=""></td>
+                                    <td><?= $real_all_teams[$recent_result['loser']]['name'] ?></td>
+                                    <td><?= $recent_result['cash'] ?></td>
+                                    <td><?= $recent_result['goods'] ?></td>
+                                    <td><?= $recent_result['other'] ?></td>
+                                    
                                 </tr>
                                 <?php } ?>                             
                             </tbody>
@@ -168,7 +173,7 @@
                             <tbody> 
                                 <?php for($i = 0; $i <= COUNT($all_teams)-1; $i++) { ?>                               
                                 <tr>
-                                    <td><?= $all_teams[$i]['rank'] ?></td>
+                                    <td><?= $i + 1 ?></td>
                                     <td><?= $all_teams[$i]['name'] ?></td>
                                     <td><?= $all_teams[$i]['team_wins'] ?></td>
                                     <td><?= $all_teams[$i]['team_gp'] ?></td>
