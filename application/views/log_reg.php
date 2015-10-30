@@ -176,7 +176,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Select your alliance:</label>
-                                                    <select class="form-control" name="select_team" required>
+                                                    <select class="form-control" name="teams_id" required>
                                                         <option value=""></option>
                                                         <option value="1">Legendary Leviathans</option>
                                                         <option value="2">Boundless Ambition</option>

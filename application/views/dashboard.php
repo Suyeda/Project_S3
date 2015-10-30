@@ -166,13 +166,14 @@
                                 </tr>                   
                             </thead>
                             <tbody> 
-                                <?php foreach ($all_teams as $team) { ?>                               
+                                <?php var_dump($all_members) ?>
+                                <?php for($i = 0; $i <= COUNT($all_teams)-1; $i++) { ?>                               
                                 <tr>
-                                    <td>1</td>
-                                    <td><?= $team['name'] ?></td>
-                                    <td><?= $team['team_wins'] ?></td>
-                                    <td><?= $team['team_gp'] ?></td>
-                                    <td>4</td>
+                                    <td><?= $all_teams[$i]['rank'] ?></td>
+                                    <td><?= $all_teams[$i]['name'] ?></td>
+                                    <td><?= $all_teams[$i]['team_wins'] ?></td>
+                                    <td><?= $all_teams[$i]['team_gp'] ?></td>
+                                    <td><?= $all_members[$i]['count']?></td>
                                 </tr>
                                 <?php } ?>
                             </tbody>

@@ -107,11 +107,11 @@
                     </div>
                 </div> <!-- end of row for leaderboards -->
                 <div class="row">
-                    <form>
+                    <form action="/bets/hold_bet/<?= $data['enemy_id'] ?>" method="post">
                         <div class="radio">
                             <label>
                                 <!-- <input type="radio" name="optradio"> --> Money
-                                <input type="text" name="goods" placeholder="$0.00">
+                                <input type="text" name="cash" placeholder="$0.00">
                             </label>
                         </div>
                         <div class="radio">
@@ -123,11 +123,11 @@
                         <div class="radio">
                             <label>
                                 <!-- <input type="radio" name="optradio" value="other"> --> Other: 
-                                <input type="text" name="other_text" placeholder="i.e. wash my car">
+                                <input type="text" name="other" placeholder="i.e. wash my car">
                             </label>
                             <p class="notes"><em>* If you want to play for free, please leave blank</em></p>
                             <label>
-                                <button type="submit" class="btn btn-default">place wager</button>
+                                <input type="submit" class="btn btn-default" value="place wager">
                             </label>
                         </div>
                     </form>

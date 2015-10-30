@@ -74,7 +74,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Project S3</a>
+                    <a class="navbar-brand" href="/bets/logout">Project S3</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -157,7 +157,10 @@
                         </tbody>
                     </table>
                 </div>
-                <button id="challenge-button">Challenge Team</button>
+                
+                <?php if($this->session->userdata('team_id') !== $current_team['id']) { ?>
+                <a href="/bets/duel/<?=$current_team['id']?>" class="btn btn-primary" id="challenge-button">Challenge Team</a>
+                <?php } ?>
             </div>
                 </div>
             </div>

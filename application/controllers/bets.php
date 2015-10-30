@@ -27,13 +27,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		public function go_success() {
 			$this->load->view('success');
 		}
+		public function submit_match() {
 
+			$this->load->model('bet');
+			$this->bet->submit_match($this->input->post());
+			redirect('/bets/dash');
+		}
 		public function dash()
 		{
 			$this->load->model('bet');
 			$all_users = $this->bet->find_all_users();
 			$all_teams = $this->bet->find_all_teams();
-			$this->load->view('dashboard', array('all_users' => $all_users, 'all_teams' => $all_teams));
+			$num_of_members = $this->bet->num_of_members();
+			$this->load->view('dashboard', array('all_users' => $all_users, 'all_teams' => $all_teams, 'all_members' => $num_of_members));
 		}
 
 		public function battle()
@@ -53,13 +59,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		public function teams(){
 			$this->load->view('teams');
 		}
-
-
 		public function quotes()
 		{
 			$this->load->model("bet");
 			$data = $this->bet->grab_random_quote();
-			echo json_encode($data);	
+			echo json_encode($data);
 		}
 
 		public function sign_in() {
@@ -110,5 +114,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         {
         	$this->load->view('edit_user');
         }
+        public function duel($enemy_id){
+        	$data = array('enemy_id' => $enemy_id);
+        	$this->load->view('wager', array('data' => $data));
+        }
+ 		public function hold_bet($enemy_id){
+ 			$this->load->model('bet');
+ 			$wager_info = $this->bet->update_bet($this->input->post(), $enemy_id);
+ 			$enemy_team = $this->bet->find_enemy_team($enemy_id);
+ 			$my_team = $this->bet->find_my_team($this->session->userdata('team_id'));
+ 			$this->load->view('battle', array('wager_info' => $wager_info, 'enemy_team' => $enemy_team, 'my_team' => $my_team));
+ 			
+ 		}
 	}
 ?>

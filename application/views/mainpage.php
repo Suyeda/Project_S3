@@ -81,9 +81,6 @@
                     <li>
                         <a href="/bets/log_reg">Sign In</a>
                     </li>
-                    <li>
-                        <a href="/bets/reg">Register</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -118,7 +115,7 @@
             </div>
             <div class="row teams">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="/bets/teams/1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -128,7 +125,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="/bets/teams/2" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -309,7 +306,7 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Locatio<a href="/bets/wager">n</a></h3>
-                        <p>3481 Melrose Place<br>Beverly Hills, CA 9021<a href="/bets/results">0</a></p>
+                        <p>1980 Zanker Rd #30<br>San Jose, CA 95112<br><a href="/bets/results">(408)519-3392</a></p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the We<a href="/bets/cart">b</a></h3>
@@ -332,8 +329,8 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3><a href="/bets/teams">A</a>bout Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        <h3><a href="/bets/teams">A</a>bout Wanna Bet</h3>
+                        <p>Wanna bet, was created when ping pong gents wanted to hold wagers but had no place to keep <a href="http://startbootstrap.com">track</a>.</p>
                     </div>
                 </div>
             </div>

@@ -11,13 +11,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			if($this->form_validation->run()) {
 
 				$query = "INSERT INTO users(first_name, last_name, email, nickname, password, wins, gp, status, created_at, teams_id) VALUES (?,?,?,?,?,?,?,?,?,?)";
-				$values = array($data['first_name'],$data['last_name'],$data['email'],$data['nickname'],$data['pass1'], 0, 0, "normal", date('Y-m-d, H:i:s'), $data['select_team']);
+				$values = array($data['first_name'],$data['last_name'],$data['email'],$data['nickname'],$data['pass1'], 0, 0, "normal", date('Y-m-d, H:i:s'), $data['teams_id']);
 				$this->db->query($query, $values);
 				$query = "SELECT * FROM users WHERE email = ?";
 				$values = array($data['email']);
 				$user = $this->db->query($query, $values)->row_array();
 				if($user) {
-					// $this->session->set_userdata("currentUser", $user);
 					$user = array(
 	                   	'user_id' => $user['id'],
 	                   	'user_email' => $user['email'],
@@ -26,8 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	                   	'nickname' => $user['nickname'],
 	                   	'wins' => $user['wins'],
 	                   	'gamesplayed' => $user['gp'],
-	                   	'status' => $user['status']
-	                   	// 'team_id' => $user['select_team']
+	                   	'status' => $user['status'],
+	                   	'team_id' => $user['teams_id']
                    	// 'is_logged_in' => true // Stephen wants to use this later
                 );
                 $this->session->set_userdata($user);
@@ -52,7 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                    'nickname' => $user['nickname'],
                    'wins' => $user['wins'],
                    'gamesplayed' => $user['gp'],
-                   'status' => $user['status']
+                   'status' => $user['status'],
+                   'team_id' => $user['teams_id']
                 );
                 $this->session->set_userdata($user);
                 return true;
@@ -67,9 +67,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		public function find_all_teams()
 		{
-			$query = "SELECT * FROM teams";
+			$query = "SELECT * FROM teams ORDER BY teams.rank ASC";
 			return $this->db->query($query)->result_array();
-		}
+		}		
 		public function grab_team_info($team_id){
 			$query = "SELECT * FROM teams WHERE id = ?";
 			$values = ($team_id);
@@ -80,6 +80,60 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$values = ($team_id);
 			return $this->db->query($query, $values)->result_array();
 		}
+		public function update_bet($wager, $enemy_id){
+			$data = array(
+				'cash' => $wager['cash'],
+				'goods' => $wager['goods'],
+				'other' => $wager['other'],
+				'enemy_id' => $enemy_id
+				);
+			return $data;
+		}
+
+		public function find_enemy_team($enemy_id)
+		{
+			$query = "SELECT teams.id, users.nickname, teams.name FROM teams LEFT JOIN users ON teams.id = users.teams_id WHERE teams.id = ?";
+			$values = ($enemy_id);
+			return $this->db->query($query, $enemy_id)->result_array();
+		}
+
+		public function find_my_team($my_team_id)
+		{
+			$query = "SELECT teams.id, users.nickname, teams.name FROM teams LEFT JOIN users ON teams.id = users.teams_id WHERE teams.id = ?";
+			$values = ($my_team_id);
+			return $this->db->query($query, $values)->result_array();
+		}
+
+		public function grab_random_quote(){
+			$query = "SELECT * FROM quotes";
+			$all_quotes = $this->db->query($query)->result_array();
+			$random = rand(1, COUNT($all_quotes)-1);
+			$query = "SELECT * FROM quotes WHERE id = ?";
+			$values = ($random);
+			return $this->db->query($query, $values)->row_array();
+		}
+		public function submit_match($data) {
+
+			$query = "INSERT INTO match_history(winner, winner_score, loser, loser_score) VALUES (?,?,?,?)";
+			$values = array($data['winner'],$data['winner_score'],$data['loser'],$data['loser_score']);
+			$this->db->query($query, $values);
+			$query2 = "INSERT INTO wagers(cash, goods, other) VALUES (?,?,?)";
+			$values2 = array($data['cash'],$data['goods'],$data['other']);
+			$this->db->query($query2, $values2);
+
+		}
+		public function num_of_members() {
+
+			$array = array();
+			$query = "SELECT * FROM teams ORDER BY teams.rank ASC";
+			$all_teams = $this->db->query($query)->result_array();
+			for($i=1;$i<=count($all_teams);$i++) {
+				$query = "SELECT count(*) count FROM users LEFT JOIN teams on users.teams_id = teams.id WHERE teams.rank = ?";
+				$count = $this->db->query($query, array($i))->row_array();
+				array_push($array, $count);
+				}
+				return $array;
+			}
 	}
 
 
