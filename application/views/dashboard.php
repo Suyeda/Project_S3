@@ -166,7 +166,6 @@
                                 </tr>                   
                             </thead>
                             <tbody> 
-                                <?php var_dump($all_members) ?>
                                 <?php for($i = 0; $i <= COUNT($all_teams)-1; $i++) { ?>                               
                                 <tr>
                                     <td><?= $all_teams[$i]['rank'] ?></td>

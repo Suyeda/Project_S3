@@ -112,14 +112,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$values = ($random);
 			return $this->db->query($query, $values)->row_array();
 		}
-		public function submit_match($data) {
-
+		public function submit_matches($data) {
 			$query = "INSERT INTO match_history(winner, winner_score, loser, loser_score) VALUES (?,?,?,?)";
 			$values = array($data['winner'],$data['winner_score'],$data['loser'],$data['loser_score']);
 			$this->db->query($query, $values);
+
+			$query3 = "SELECT id FROM match_history WHERE winner = ? AND winner_score =? AND loser = ? AND loser_score = ?";
+			$values3 = array($data['winner'], $data['winner_score'], $data['loser'], $data['loser_score']);
+			$match_id = $this->db->query($query3, $values3)->row_array();
+
 			$query2 = "INSERT INTO wagers(cash, goods, other) VALUES (?,?,?)";
 			$values2 = array($data['cash'],$data['goods'],$data['other']);
 			$this->db->query($query2, $values2);
+
+			$query4 = "SELECT id from wagers WHERE cash = ? AND goods = ? AND other = ?";
+			$values4 = array($data['cash'],$data['goods'],$data['other']);
+			$wager_id = $this->db->query($query4, $values4)->row_array();
+
+			$query5 = "INSERT INTO matches(teams_id, teams_id1, wagers_id, match_history_id) VALUES (?,?,?,?)";
+			$values5 = array($data['winner'], $data['loser'], $wager_id['id'], $match_id['id']);
+			$this->db->query($query5, $values5);
+
+
 
 		}
 		public function num_of_members() {

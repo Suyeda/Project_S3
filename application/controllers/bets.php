@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		public function submit_match() {
 
 			$this->load->model('bet');
-			$this->bet->submit_match($this->input->post());
+			$this->bet->submit_matches($this->input->post());
 			redirect('/bets/dash');
 		}
 		public function dash()
